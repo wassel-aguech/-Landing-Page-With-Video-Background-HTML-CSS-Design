@@ -68,9 +68,6 @@
             color : transparent;
         }
 
-
-
-        
         .content a{
             text-decoration: none;
             display: inline-block;
@@ -81,10 +78,45 @@
             border-radius: 50px;
             margin-top: 20px;
 
+
+            letter-spacing: 2px;
+            text-align: center;
+            position: relative;
+            transition: all .35s;
+
         }
 
-       
+        .content a span{
+            
+                position: relative;
+                z-index: 2;
+              
+        }
 
+        .content a:after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            border-radius: 50px;
+            background: blue;
+            transition: all .35s;
+          }
+          
+         .content  a:hover{
+            color: #fff;
+          }
+          
+         .content a:hover:after{
+            width: 100%;
+          }
+
+
+
+
+    
         .back-video{
             position: absolute;
             right: 0;
