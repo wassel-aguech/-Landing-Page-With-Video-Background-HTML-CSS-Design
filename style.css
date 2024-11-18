@@ -101,7 +101,7 @@
             width: 0;
             height: 100%;
             border-radius: 50px;
-            background: blue;
+            background: rgb(117, 117, 213);
             transition: all .35s;
           }
           
